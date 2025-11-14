@@ -26,6 +26,10 @@ to "Targets", select the target, and then go to "Build Phases" and then:
 
     * Embed Frameworks: add the SwiftGodotAppleTempalte.xcframework
 
+Once [this PR is merged](https://github.com/godotengine/godot/issues/112783) 
+the first step should not be necessary.   The second step I believe is a 
+separate bug/issue.
+
 # What is going on.
 
 The extension is implemented using SwiftPM, and this contains a single
