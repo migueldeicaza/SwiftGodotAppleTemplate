@@ -1,0 +1,7 @@
+[configuration]
+
+entry_symbol = "template_entry_point"
+compatibility_minimum = 4.4
+
+[libraries]
+ios = "res://addons/SwiftGodotAppTemplate/bin/SwiftGodotAppleTemplate.xcframework"

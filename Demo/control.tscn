@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://hj7rutbgrh8r"]
+
+[ext_resource type="Script" uid="uid://chb4cxno157mq" path="res://control.gd" id="1_62e2m"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_62e2m")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 400.0
+offset_right = 642.0
+offset_bottom = 431.0
+text = "Click here to call Swift"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 687.0
+offset_top = 353.0
+offset_right = 888.0
+offset_bottom = 384.0
+placeholder_text = "your name"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 356.0
+offset_right = 651.0
+offset_bottom = 379.0
+text = "What should I call you?"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 93.0
+offset_right = 175.0
+offset_bottom = 116.0
+text = "Greet Result:"
+
+[node name="result" type="Label" parent="."]
+layout_mode = 0
+offset_left = 690.0
+offset_top = 448.0
+offset_right = 893.0
+offset_bottom = 471.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
