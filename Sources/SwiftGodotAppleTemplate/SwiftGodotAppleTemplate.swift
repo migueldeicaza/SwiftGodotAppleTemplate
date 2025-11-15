@@ -59,5 +59,8 @@ struct GreetView: View {
 
 // The name below should match the value in the .gdextesion file in addons
 // for the "entry_symbol" value:
-#initSwiftExtension(cdecl: "template_entry_point", types: [SwiftGodotAppleTemplate.self])
+#initSwiftExtension(cdecl: "template_entry_point", types: [
+    SwiftGodotAppleTemplate.self,
+    GameCenterManager.self
+])
 
