@@ -41,3 +41,9 @@ xcframework:
 		-framework '$(IOS_SIM_FRAMEWORK)' \
 		-output '$(XCFRAMEWORK)'
 
+q:
+	rm -rf '$(XCFRAMEWORK)'; \
+	$(XCODEBUILD) -create-xcframework \
+		-framework ~/DerivedData/SwiftGodotAppleTemplate-*/Build/Products/Debug-iphoneos/PackageFrameworks/SwiftGodotAppleTemplate.framework/ \
+		-output '$(XCFRAMEWORK)'
+
